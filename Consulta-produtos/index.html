@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Produtos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Consulta de Produtos</h1>
         <form id="productForm">
             <div class="form-group">
-                <label for="tipo">TIPO:</label>
+                <label for="tipo"><i class="fas fa-filter"></i> TIPO:</label>
                 <select id="tipo" name="tipo" required>
                     <option value="">Selecione...</option>
                     <option value="CONEXÃO RETA">CONEXÃO RETA</option>
@@ -29,7 +30,7 @@
                 </select>
             </div>
             <div class="form-group" id="roscaGroup">
-                <label for="rosca">ROSCA:</label>
+                <label for="rosca"><i class="fas fa-cog"></i> ROSCA:</label>
                 <select id="rosca" name="rosca">
                     <option value="">Selecione...</option>
                     <option value="M5">M5</option>
@@ -40,7 +41,7 @@
                 </select>
             </div>
             <div class="form-group" id="tuboGroup">
-                <label for="tubo">TUBO:</label>
+                <label for="tubo"><i class="fas fa-toolbox"></i> TUBO:</label>
                 <select id="tubo" name="tubo">
                     <option value="">Selecione...</option>
                     <option value="4 MM">4 MM</option>
@@ -53,7 +54,7 @@
                 </select>
             </div>
             <div class="form-group" id="rosca2Group" style="display: none;">
-                <label for="rosca2">ROSCA 2:</label>
+                <label for="rosca2"><i class="fas fa-cog"></i> ROSCA 2:</label>
                 <select id="rosca2" name="rosca2">
                     <option value="">Selecione...</option>
                     <option value="M5">M5</option>
