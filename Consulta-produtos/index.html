@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Produtos</h1>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="tipo">TIPO:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="CONEXÃO RETA">CONEXÃO RETA</option>
+                    <option value="CONEXÃO GIRATÓRIA">CONEXÃO GIRATÓRIA</option>
+                    <option value="CONTROLE DE FLUXO">CONTROLE DE FLUXO</option>
+                    <option value="UNIÃO RETA">UNIÃO RETA</option>
+                    <option value="UNIÃO T">UNIÃO T</option>
+                    <option value="UNIÃO Y">UNIÃO Y</option>
+                    <option value="UNIÃO L">UNIÃO L</option>
+                    <option value="UNIÃO PAINEL">UNIÃO PAINEL</option>
+                    <option value="LUVA">LUVA</option>
+                    <option value="BUJÃO">BUJÃO</option>
+                    <option value="NIPLE">NIPLE</option>
+                    <option value="BUCHA DE REDUÇÃO">BUCHA DE REDUÇÃO</option>
+                </select>
+            </div>
+            <div class="form-group" id="roscaGroup">
+                <label for="rosca">ROSCA:</label>
+                <select id="rosca" name="rosca">
+                    <option value="">Selecione...</option>
+                    <option value="M5">M5</option>
+                    <option value="1/8">1/8"</option>
+                    <option value="1/4">1/4"</option>
+                    <option value="3/8">3/8"</option>
+                    <option value="1/2">1/2"</option>
+                </select>
+            </div>
+            <div class="form-group" id="tuboGroup">
+                <label for="tubo">TUBO:</label>
+                <select id="tubo" name="tubo">
+                    <option value="">Selecione...</option>
+                    <option value="4 MM">4 MM</option>
+                    <option value="6 MM">6 MM</option>
+                    <option value="8 MM">8 MM</option>
+                    <option value="10 MM">10 MM</option>
+                    <option value="12 MM">12 MM</option>
+                    <option value="14 MM">14 MM</option>
+                    <option value="16 MM">16 MM</option>
+                </select>
+            </div>
+            <div class="form-group" id="rosca2Group" style="display: none;">
+                <label for="rosca2">ROSCA 2:</label>
+                <select id="rosca2" name="rosca2">
+                    <option value="">Selecione...</option>
+                    <option value="M5">M5</option>
+                    <option value="1/8">1/8"</option>
+                    <option value="1/4">1/4"</option>
+                    <option value="3/8">3/8"</option>
+                    <option value="1/2">1/2"</option>
+                </select>
+            </div>
+        </form>
+
+        <div id="results">
+            <h2>Resultados:</h2>
+            <div class="results-grid" id="resultsGrid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
